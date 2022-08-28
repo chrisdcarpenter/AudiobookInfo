@@ -3,9 +3,10 @@ package author
 import "fmt"
 
 type Author struct {
-	Name    string
-	Aliases []string
-	Website string
+	Name       string
+	Aliases    []string
+	Website    string
+	AmazonLink string
 }
 
 func (a Author) Link() string {

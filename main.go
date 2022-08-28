@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/chrisdcarpenter/AudiobookInfo/internal/author"
+)
 
 func main() {
-	fmt.Println("Hello world")
+	a := author.Author{
+		Name: "Tao Wong",
+	}
+	fmt.Printf("Hello %s", a.Name)
 }
