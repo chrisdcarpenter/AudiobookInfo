@@ -1,11 +1,14 @@
 package series
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Series struct {
-	Name       string
-	Website    string
-	AmazonLink string
+	Name       string `json:"name"`
+	Website    string `json:"website"`
+	AmazonLink string `json:"amazon_link"`
+	AuthorName string `json:"author"`
 }
 
 func (s Series) Link() string {

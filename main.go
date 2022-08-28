@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/chrisdcarpenter/AudiobookInfo/internal/author"
+	"github.com/chrisdcarpenter/bookTracking/internal/author"
 )
 
 func main() {
