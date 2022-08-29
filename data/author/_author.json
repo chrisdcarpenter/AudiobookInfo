@@ -1,0 +1,10 @@
+{
+  "name": "demoString",
+  "aliases": [
+    "demoString"
+  ],
+  "links": {
+    "website": "url",
+    "amazon": "url"
+  }
+}

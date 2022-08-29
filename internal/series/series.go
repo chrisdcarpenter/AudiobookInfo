@@ -5,12 +5,11 @@ import (
 )
 
 type Series struct {
-	Name       string `json:"name"`
-	Website    string `json:"website"`
-	AmazonLink string `json:"amazon_link"`
-	AuthorName string `json:"author"`
+	Name       string            `json:"name"`
+	AuthorName string            `json:"author_name"`
+	Links      map[string]string `json:"links"`
 }
 
-func (s Series) Link() string {
-	return fmt.Sprintf("[%s](%s)[A](%s)", s.Name, s.Website, s.AmazonLink)
+func (s Series) ToMarkdownLink() string {
+	return fmt.Sprintf("[%s](%s)[A](%s)", s.Name, s.Links["website"], s.Links["amazon"])
 }
