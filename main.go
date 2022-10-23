@@ -19,7 +19,7 @@ func main() {
 	var l library.Library
 	library.LoadAllData(&l)
 
-	err := renderBooksMarkdown("./templates/books.md", l)
+	err := renderBooksMarkdown("./templates/books.md.tmpl", l)
 	if err != nil {
 		log.Error().Err(err).Msg("Failed to render books markdown")
 	}
